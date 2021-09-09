@@ -3,38 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script src="/js/includeHTML.js"></script>
 </head>
 <body>
-    <header>
-       <a href="">
-           <h2>WEB PUBLISHER</h2>
-           <h1>PAPER</h1>
-       </a>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">PUBLISHING</a></li>
-            <li><a href="">OTHER WORKS</a></li>
-            <li><a href="">RESUME</a></li>
-            <li><a href="">CONNECT</a></li>
-        </ul>
-    </header>
-    <section>
-        <div>
-            <ul>
-                <li><a href=""></a></li>
-            </ul>
-        </div>
-        <h3></h3>
-        <h4></h4>
-        <div>
-            기술
-        </div>
-        <div>
-            자소서
-        </div>
-    </section>
-    <footer>
-        
-    </footer>
+    <div>
+       <header include-html="/header.html"></header>
+        <section>
+            <div>
+                <ul>
+                    <li><a href="">배너</a></li>
+                </ul>
+            </div>
+            <h3>큰 텍스트</h3>
+            <h4>작은 텍스트</h4>
+            <div>
+                기술
+            </div>
+            <div>
+                자소서
+            </div>
+        </section>
+        <footer include-html="/footer.html"></footer>
+    </div>
 </body>
+<script>
+    includeHTML();
+</script>
 </html>
