@@ -1,0 +1,25 @@
+section{width: 95%; margin: 0 auto; max-width: 850px; }
+section > div{width: 100%; }
+.works_list{width: 100%; }
+.works_list > li{width: 100%; }
+.works_list > li > .imgBox{cursor: pointer; width: 100%; height: 0; padding-bottom: 70%; background-color: #ccc; position: relative; }
+.works_list > li > .imgBox > img{}
+.works_list > li > h3{cursor: pointer; font-size: 18px; color: #333; }
+.works_list > li > p{font-size: 14px; color: #797979; }
+.modalBox{position: fixed; width: 100%; height: 100%; left: 0; top: 0; background-color: rgba(0,0,0,.5); z-index: 1500; display: none; }
+.modalBox > div{max-width: 1064px; width: 95%; position: absolute; background-color: #fff; min-height: 300px; left: 2.5%; top: 80px; }
+@media all and (min-width: 480px){
+    section{}
+    .works_list{}
+}
+@media all and (min-width: 768px){
+    section{}
+    .works_list{}
+    .works_list:after{content: ''; display: block; clear: both; }
+    .works_list > li{float: left; width: 50%; }
+}
+@media all and (min-width: 1280px){
+    section{}
+    .works_list{}
+    .modalBox > div{left: 50%; margin-left: -532px; }
+}

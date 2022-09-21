@@ -1,13 +1,49 @@
+.wrap{max-width: 1280px; margin: 0 auto; height: 100vh; position: relative; }
 header{}
-header > div{}
-header > ul{}
+.headerT{position: relative; padding-top: 12px; }
+.headerT > h1{margin-bottom: 48px; text-align: center; margin: 0 auto; }
+.headerT > h1 > a{font-size: 24px; color: #222; }
+.headerT > div{position: absolute; width: 100%; top: 60px; z-index: 1000; }
+.headerT > div > ul{text-align: center; font-size: 0; }
+.headerT > div > ul > li{display: inline-block; margin: 0 20px; }
+.headerT > div > ul > li > h2{}
+.headerT > div > ul > li > h2 > a{color: #797979; font-weight: normal; font-size: 12px; }
+.headerT > div > ul > li.on > h2 > a{color: #333; font-weight: bold; }
+.headerB{display: none; }
+.headerB > h5{font-size: 12px; color: #797979; }
+.headerB > ul{}
+.headerB > ul > li{}
+.headerB > ul > li > a{}
+.headerB > p{font-size: 12px; }
 
-@media all and (max-width: 480px){
+footer{border-top: 1px solid #efefef; padding: 40px 0; }
+footer > h4{text-align: center; width: 100%; margin-bottom: 20px; }
+footer > h4 > a{color: #ccc; font-size: 18px; font-weight: bold; }
+footer > h5{font-size: 14px; color: #595959; margin-bottom: 12px; text-align: center; }
+footer > ul{font-size: 0; text-align: center; margin-bottom: 40px; }
+footer > ul > li{display: inline-block; margin: 0 12px; }
+footer > ul > li > a{}
+footer > p{font-size: 12px; color: #797979; text-align: center; }
+
+@media all and (min-width: 480px){
     
 }
-@media all and (max-width: 768px){
-    
+@media all and (min-width: 768px){
 }
-@media all and (max-width: 1280px){
-    
+@media all and (min-width: 1280px){
+    header{height: 100%; left: 0; }
+    header{float: left; width: 30%; height: 100vh; border-right: 1px solid #e5e5e5; padding-top: 100px; }
+    .headerT{position: static; }
+    .headerT > h1{text-align: left; }
+    .headerT > ul > li{margin-bottom: 20px; }
+    .headerB{display: block; position: absolute; bottom: 20px; }
+    .headerB > h5{margin-bottom: 12px; }
+    .headerB > div > ul{margin-bottom: 12px; }
+    .headerB > div > ul > li{float: left; }
+    .headerB > div > ul > li > a{}
+    .headerB > p{color: #797979; font-size: 12px; }
+    section{float: right; width: 70%; height: 100%; overflow: auto; padding-top: 100px; padding-left: 20px;  }
+    footer{display: none; }
+    header{width: 25%; }
+    section{width: 75%; }
 }
