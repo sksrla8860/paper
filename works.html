@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>기회/디자인 UXUI/프론트엔드</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/works.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrap clearfix">
+        <header>
+            <div class="headerT">
+               <h1><a href="/">SHIN JONGWON</a></h1>
+               <div>
+                   <ul>
+                       <li><h2><a href="">RESUME</a></h2></li>
+                       <li class="on"><h2><a href="">WORKS</a></h2></li>
+                       <li><h2><a href="">CONECT</a></h2></li>
+                   </ul>
+               </div>
+            </div>
+            <div class="headerB">
+                <h5>010. 2409. 9480</h5>
+                <h5>sksrla8860@gmail.com</h5>
+                <ul class="clearfix">
+                    <li><a href="">인스타</a></li>
+                    <li><a href="">오픈카톡</a></li>
+                </ul>
+                <p>Copyright 2022. Shin jongwon. All rights reserved </p>
+            </div>
+        </header>
+        <section>
+            <div>
+                <ul class="works_list">
+                    <li>
+                        <div class="imgBox"><img src="" alt=""></div>
+                        <h3 class="title">그린컴퓨터아카데미</h3>
+                        <p>AMS / 일정관리</p>
+                        <div class="modalBox">
+                            <div></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+           <h4><a href="/">SHIN JONGWON</a></h4>
+            <h5>010. 2409. 9480</h5>
+            <h5>sksrla8860@gmail.com</h5>
+            <ul>
+                <li><a href="">인스타</a></li>
+                <li><a href="">오픈카톡</a></li>
+            </ul>
+            <p>Copyright 2022. Shin jongwon. All rights reserved </p>
+        </footer>
+    </div>
+</body>
+<script>
+    $(function(){
+        $('.imgBox, title').on('click', function(){
+            $(this).siblings('.modalBox').show();
+        })
+    })
+</script>
+</html>
