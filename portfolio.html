@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./js/jquery_3.7.1.js"></script>
+    <script src="./js/turn.min.js"></script>
+</head>
+<body>
+    <div id="flipbook">
+        <div><img src="/image/portfolio_01_1.png"></div>
+        <div><img src="/image/portfolio_01_2.png"></div>
+        <div><img src="/image/portfolio_01_2.png"></div>
+        <div><img src="/image/portfolio_01_2.png"></div>
+        <div><img src="/image/portfolio_01_2.png"></div>
+        <div><img src="/image/portfolio_01_2.png"></div>
+        <div><img src="/image/portfolio_01_2.png"></div>
+        <div><img src="/image/portfolio_01_2.png"></div>
+        <div><img src="/image/portfolio_01_2.png"></div>
+        <div><img src="/image/portfolio_01_2.png"></div>
+    </div>
+    <script>
+        $(function(){
+            $('#flipbook').turn({
+                elevation: 50,
+                autoCenter: true
+            });
+        })
+    </script>
+</body>
+</html>
